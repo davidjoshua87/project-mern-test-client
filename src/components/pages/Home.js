@@ -18,7 +18,7 @@ function Home() {
 					<b>Database</b>: MongoDB Atlas with Mongoose ODM
 				</p>
 				<p>
-					<b>Deployment</b>: Vercel
+					<b>Deployment</b>: Vercel (Front-end), Heroku (Back-end)
 				</p>
 				<p>
 					<b>Developed By</b>: JDs Web Developer
