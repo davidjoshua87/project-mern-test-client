@@ -6,19 +6,19 @@ function Home() {
 		<div className="container text-center home" style={{ marginTop: "60px" }}>
 			<div className="card">
 				<div className="card-header" style={{ marginBottom: "20px" }}>
-					<h1>Data Patients Management</h1>
+					<h1>Patients Data Management System</h1>
 				</div>
 				<p>
-					<b>Front-end</b>: React.js
+					<b>Front-end</b>: React.Js
 				</p>
 				<p>
-					<b>Back-end</b>: Node.js, Express.js
+					<b>Back-end</b>: Node.Js and Express.Js
 				</p>
 				<p>
 					<b>Database</b>: MongoDB Atlas with Mongoose ODM
 				</p>
 				<p>
-					<b>Deployment</b>: Vercel (Front-end), Heroku (Back-end)
+					<b>Deployment</b>: Vercel (Front-end) and Heroku (Back-end)
 				</p>
 				<p>
 					<b>Developed By</b>: JDs Web Developer

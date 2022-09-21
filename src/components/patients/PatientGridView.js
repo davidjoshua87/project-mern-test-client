@@ -33,12 +33,12 @@ function PatientGridView() {
 			</h2>
 			<hr />
 			<div>
-				<div className="d-flex flex-wrap">
+				<div className="d-flex flex-wrap text-center justify-content-center">
 					{patients.map((patient) => {
 						return (
 							<div
 								className="card"
-								style={{ width: 250, margin: 30 }}
+								style={{ width: 350, margin: 30 }}
 								key={patient._id}
 							>
 								<div className="card-header">
@@ -58,27 +58,27 @@ function PatientGridView() {
 											{patient.phone}
 										</a>
 									</h6>
-									<p className="card-text">
+									<p className="d-flex align-items-center">
 										<i className="bi bi-gift p-2"></i>
 										Age: {patient.age}
 									</p>
-									<p className="card-text">
+									<p className="d-flex align-items-center">
 										<i className="bi bi-gender-ambiguous p-2"></i>
 										Gender: {patient.gender}
 									</p>
-									<p className="card-text">
+									<p className="d-flex align-items-center">
 										<i className="bi bi-thermometer-half p-2"></i>
 										Problem: {patient.problem}
 									</p>
-									<p className="card-text">
+									<p className="d-flex align-items-center">
 										<i className="bi bi-slash-circle p-2"></i>
 										Allergy: {patient.allergy}
 									</p>
-									<p className="card-text">
+									<p className="d-flex align-items-center">
 										<i className="bi bi-capsule p-2"></i>
 										Prescription: {patient.prescription}
 									</p>
-									<p className="card-text">
+									<p className="d-flex align-items-center">
 										<i className="bi bi-geo-alt-fill text-warning p-2"></i>
 										<small className="text-muted two-liner">
 											{patient.address}

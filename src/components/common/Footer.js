@@ -4,9 +4,9 @@ const Footer = () => {
 
 	return (
 		<div className="container text-center footer" style={{ marginTop: "auto" }}>
-			© <small>{new Date().getFullYear()}</small> JDs{" "}
-			<a href={link} target={target}>
-				jds.my.id
+			<small>©{new Date().getFullYear()}</small>.{" "}
+			<a href={link} target={target} style={{textDecoration: "none"}}>
+			JDs Web Developer
 			</a>
 		</div>
 	);

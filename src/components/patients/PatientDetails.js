@@ -35,7 +35,12 @@ function PatientDetail(props) {
 					</h2>
 				</div>
 				<div className="row g-0">
-					<div className="col-md-8">
+				<div className="col-md-5 col-lg-4">
+					<div className="card-body d-flex justify-content-center m-auto" style={{ padding: "30px"}}>
+							<img src="https://via.placeholder.com/345x465.png" className="rounded" alt="patient" width={345} height={465} />
+						</div>
+					</div>
+					<div className="col-md-7 col-lg-8">
 						<div className="card-body" style={{ padding: "30px", paddingBottom: "0px" }}>
 						<div>
 								<small>
@@ -82,11 +87,6 @@ function PatientDetail(props) {
 							<Link to="/patients/table-view" className="btn btn-secondary">
 								Close
 							</Link>
-						</div>
-					</div>
-					<div className="col-md-4">
-						<div className="card-body d-flex justify-content-center m-auto" style={{ padding: "30px"}}>
-							<img src="https://via.placeholder.com/345x465.png" className="rounded" alt="patient" width={345} height={465} />
 						</div>
 					</div>
 				</div>

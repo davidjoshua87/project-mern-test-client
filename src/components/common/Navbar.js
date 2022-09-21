@@ -5,8 +5,8 @@ const Navbar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div className="container">
-				<NavLink className="navbar-brand" activeclassname="active" hrefLang="https://jds.my.id" to="/">
-					JDs
+				<NavLink className="navbar-brand" activeclassname="active" to="/">
+					Home
 				</NavLink>
 				<button
 					className="navbar-toggler collapsed"

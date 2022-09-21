@@ -33,69 +33,71 @@ function PatientTable() {
 					</p>
 				</h2>
 			</div>
-		
-			<div className="table-responsive" style={{ marginTop: "20px" }}>
-				<table className="table riped  table-hover table-bordered container">
-					<thead className="table-dark">
-						<tr>
-							<th>Name</th>
-							<th>Age</th>
-							<th>Gender</th>
-							<th>Phone</th>
-							<th>Email</th>
-							<th>Address</th>
-							<th>Problem</th>
-							<th>Allergy</th>
-							<th>Prescription</th>
-							<th>View</th>
-							<th>Edit</th>
-							<th>Delete</th>
-						</tr>
-					</thead>
-					<tbody>
-						{patients &&
-							patients.map((patient) => {
-								return (
-									<tr key={patient._id}>
-										<td>
-											<Link to={`/patients/${patient._id}`} className="link-line">
-												{patient.name}
-											</Link>
-										</td>
-										<td>{patient.age}</td>
-										<td>{patient.gender}</td>
-										<td>{patient.phone}</td>
-										<td>{patient.email}</td>
-										<td>{patient.address}</td>
-										<td>{patient.problem}</td>
-										<td>{patient.allergy}</td>
-										<td>{patient.prescription}</td>
-										<td>
-											<Link to={`/patients/${patient._id}`} className="btn btn-success">
-												View
-											</Link>
-										</td>
-										<td>
-											<Link
-												to={`/patients/${patient._id}/edit`}
-												className="btn btn-warning"
-											>
-												Edit
-											</Link>
-										</td>
-										<td>
-											<Link
-												to={`/patients/${patient._id}/delete`}
-												className="btn btn-danger"
-											>
-												Delete
-											</Link>
-										</td>
-									</tr>
-								);
-							})}
-					</tbody>
-				</table>
+			<hr />
+			<div className="mt-5">
+				<div className="table-responsive rounded">
+					<table className="table riped table-hover table-bordered container">
+						<thead className="table-dark">
+							<tr>
+								<th>Name</th>
+								<th>Age</th>
+								<th>Gender</th>
+								<th>Phone</th>
+								<th>Email</th>
+								<th>Address</th>
+								<th>Problem</th>
+								<th>Allergy</th>
+								<th>Prescription</th>
+								<th>View</th>
+								<th>Edit</th>
+								<th>Delete</th>
+							</tr>
+						</thead>
+						<tbody>
+							{patients &&
+								patients.map((patient) => {
+									return (
+										<tr key={patient._id}>
+											<td>
+												<Link to={`/patients/${patient._id}`} className="link-line">
+													{patient.name}
+												</Link>
+											</td>
+											<td>{patient.age}</td>
+											<td>{patient.gender}</td>
+											<td>{patient.phone}</td>
+											<td>{patient.email}</td>
+											<td>{patient.address}</td>
+											<td>{patient.problem}</td>
+											<td>{patient.allergy}</td>
+											<td>{patient.prescription}</td>
+											<td>
+												<Link to={`/patients/${patient._id}`} className="btn btn-success">
+													View
+												</Link>
+											</td>
+											<td>
+												<Link
+													to={`/patients/${patient._id}/edit`}
+													className="btn btn-warning"
+												>
+													Edit
+												</Link>
+											</td>
+											<td>
+												<Link
+													to={`/patients/${patient._id}/delete`}
+													className="btn btn-danger"
+												>
+													Delete
+												</Link>
+											</td>
+										</tr>
+									);
+								})}
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	);
